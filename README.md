@@ -23,14 +23,14 @@ To download from azure data lake, open `index-dls.js` and edit the first lines, 
 After that, run the script in your terminal in the project root:
 
 ```
-node index-dls
+node index-dls.js
 ```
 
 This should prompt you to login interactively to microsoft azure, and afterwards it will list all the files being downloaded.
 
 Note that if a file from data lake has the same file size and modification date from its cloud version, it will not be downloaded.
 
-Finally, the script will try to download every file in parallel, if the process did not finish it means it is still downloading, wait for it to finish to avoid downloading your files in half.
+Finally, the script will try to download every file in parallel, if the process did not finish it probably means it is still downloading, wait for it to finish to avoid downloading your files in half.
 
 ### Download from Azure Blob Storage
 
